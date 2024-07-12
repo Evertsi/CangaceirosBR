@@ -1,0 +1,87 @@
+.app {
+    position: relative;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.lista-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.lista-menu__link {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--color-primary);
+    padding: 1em;
+    font-weight: 700;
+}
+
+.container__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+}
+.opcoes {
+    display: none;
+}
+
+a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 767px) {
+    .opcoes {
+        display: block;
+    }
+    .cabecalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-image: url(./imagens/Menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .app__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opcoes__botao {
+        display: none;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+    }
+    .opcoes__botao:checked~.opcoes-menu {
+        display: block;
+    } 
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--color-secondary)
+    }
+    .lista-menu__link {
+        background: var(--color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+    .opcoes__botao:checked ~.container__rotulo > .cabecalho__menu-hamburguer {
+        background-image: url(./imagens/Menu\ Aberto.svg);
+    }
+    .opcoes__botao:checked ~.container__rotulo {
+        background: var(--azul-degrade);
+    }
+    .app__image {
+        width: 15em;
+        height: 5em;
+    }
+}

@@ -1,0 +1,85 @@
+@import url(./header.css);
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #FFF;
+    --azul-royal: #144480;
+    --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --lils: #B872FF;
+    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    --font-principal: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    background-color: var(--lils);
+    min-height: 100vh;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    background: url("./imagens/Cangaceiros\ Clash\ background.png");
+    background-size: cover;
+    font-family: var(--font-principal);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', cursive;
+}
+.app__section-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__title {
+    font-size: 8em;
+}
+.app__title-strong {
+    color: var(--color-secondary);
+}
+.app__banner-img {
+    width: 80em;
+    height: 80em;
+}
+.app__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+.app__footer-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+/* fim - toggle */
+
+a:hover {
+    color: red;
+}
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    .app__section-banner-container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10em;
+    }
+    .app__banner-img {
+        width: 40em;
+        height: 40em;
+    }
+    .app__title {
+        font-size: 4em;
+    }
+    .app__footer-text {
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
