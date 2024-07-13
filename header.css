@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .lista-menu {
     display: flex;
@@ -14,7 +14,7 @@
 }
 .lista-menu__link {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     color: var(--color-primary);
     padding: 1em;
     font-weight: 700;
@@ -36,7 +36,8 @@ a:hover {
 
 @media screen and (max-width: 767px) {
     .opcoes {
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .cabecalho__menu-hamburguer {
         width: 24px;
@@ -50,6 +51,8 @@ a:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        flex-direction: row-reverse;
     }
     .opcoes__botao {
         display: none;
@@ -60,7 +63,7 @@ a:hover {
         top: 100%;
         width: 60vw;
     }
-    .opcoes__botao:checked~.opcoes-menu {
+    .opcoes__botao:checked~.lista-menu {
         display: block;
     } 
     .lista-menu__item {
@@ -68,11 +71,12 @@ a:hover {
         background-color: var(--color-secondary)
     }
     .lista-menu__link {
-        background: var(--color-secondary);
+        background: var(--color-primary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-transform: uppercase;
+        font-size: 14px;
     }
     .opcoes__botao:checked ~.container__rotulo > .cabecalho__menu-hamburguer {
         background-image: url(./imagens/Menu\ Aberto.svg);
