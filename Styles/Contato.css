@@ -1,0 +1,48 @@
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sobre__geral {
+    padding: 10em 15em;
+}
+.sobre__geral-imagem {
+    width: 45em;
+    height: 45em;
+}
+.sobre__geral-nome {
+    font-size: 25px;
+    font-weight: 700;
+}
+.sobre__geral-cargo {
+    font-size: 20px;
+    padding: 0.7em;
+}
+.sobre__geral-icone {
+    width: 6em;
+    height: 5em;
+}
+
+@media screen and (max-width: 767px) {
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre__geral {
+        padding: 2em 1em;
+    }
+    .sobre__geral-imagem {
+        width: 15em;
+        height: 15em;
+    }
+    .sobre__geral-nome {
+        font-size: 18px;
+    }
+    .sobre__geral-cargo {
+        font-size: 15px;
+    }
+    .sobre__geral-icone {
+        width: 4em;
+        height: 3em;
+    }
+}

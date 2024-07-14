@@ -1,4 +1,7 @@
-@import url(./header.css);
+@import url(./Styles/header.css);
+@import url(./Styles/Contato.css);
+@import url(./Styles/Partidas.css);
+@import url(./Styles/Ranking.css);
 
 :root {
     --color-primary: #000000;
@@ -61,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) and (min-width: 768px) {}
 
 /* Para Celulares */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .app__section-banner-container {
         flex-direction: column;
         text-align: center;
