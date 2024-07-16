@@ -7,7 +7,7 @@ table, th, td {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 10vh;
+    padding: 10vh 0 10vh 0;
 }
 .tabela__individual {
     font-size: 36px;
@@ -27,4 +27,11 @@ table, th, td {
     padding: 0 0 1em 0;
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .app__title-ranking {
+        font-size: 4em;
+    }
+    .tabela__individual {
+        font-size: 16px;
+    }
+}
