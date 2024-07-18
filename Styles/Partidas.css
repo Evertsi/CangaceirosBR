@@ -1,1 +1,21 @@
-@media screen and (max-width: 767px) {}
+.app__section-banner-partidas {
+    text-align: center;
+}
+.app__title-partidas {
+    font-size: 8em;
+    padding: 0 0 1em 0;
+    font-weight: 700;
+}
+.app__title-strong-partidas {
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 767px) {
+    iframe {
+        width: 40em;
+        height: 40em;
+    }
+    .app__title-partidas {
+        font-size: 3em;
+    }
+}
