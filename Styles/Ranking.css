@@ -27,6 +27,34 @@ table, th, td {
     padding: 0 0 1em 0;
     font-weight: 700;
 }
+.app__title-semanal {
+    font-size: 5em;
+    padding: 0 0 1em 0;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+.sobre__ranking {
+    display: flex;
+}
+.sobre__ranking-top{
+    padding: 10em;
+}
+.sobre__ranking-top-imagem {
+    width: 30em;
+    height: 30em;
+}
+.sobre__ranking-top-nome {
+    font-size: 25px;
+    font-weight: 700;
+}
+.sobre__ranking-top-colocacao {
+    font-size: 20px;
+    padding: 0.7em;
+}
+.sobre__geral-iconeclash {
+    width: 6em;
+    height: 5em;
+}
 
 @media screen and (max-width: 767px) {
     table, th, td {
@@ -38,5 +66,25 @@ table, th, td {
     }
     .tabela__individual {
         font-size: 12px;
+    }
+    .app__title-semanal {
+        font-size: 2em;
+    }
+    .sobre__ranking-top{
+        padding: 3em 1em;
+}
+    .sobre__ranking-top-imagem {
+        width: 10em;
+        height: 10em;
+    }
+    .sobre__ranking-top-nome {
+        font-size: 10px;
+    }
+    .sobre__ranking-top-colocacao {
+        font-size: 8px;
+    }
+    .sobre__geral-iconeclash {
+        width: 4em;
+        height: 3em;
     }
 }
