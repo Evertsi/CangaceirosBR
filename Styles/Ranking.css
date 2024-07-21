@@ -35,6 +35,8 @@ table, th, td {
 }
 .sobre__ranking {
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 .sobre__ranking-top{
     padding: 10em;
